@@ -15,13 +15,14 @@ Increasing the size of the stack will allow for many more stack frames that woul
 
 6. Considering either the malloc.cpp or alloca.cpp versions of the program, generate a diagram showing two Nodes. Include in the diagram the relationship of the head, tail, and Node next pointers. show the size (in bytes) and structure of a Node that allocated six bytes of data include the bytes pointer, and indicate using an arrow which byte in the allocated memory it points to.
 					
+```
 		          |---------------|        |---------------| <—- byte* tail
-byte* head —> | byte* next | —> | byte* next | —> null
+   byte* head —-> | byte* next    | —->    | byte* next    | —-> null
 		          |---------------|        |---------------|
 		          |6 bytes of     |        | 6 bytes of    | 
-              |   data        |        |  data         |
+                  |   data        |        |  data         |
 		          |---------------|        |---------------|
-
+```
 7. There's an overhead to allocating memory, initializing it, and eventually processing (in our case, hashing it). For each program, were any of these tasks the same? Which one(s) were different?
 The initialization of memory should be about the same and so should the hashing processes.
 List has unique overhead as its part of the STL. Malloc and new are allocated to the heap and so have their own overhead.
