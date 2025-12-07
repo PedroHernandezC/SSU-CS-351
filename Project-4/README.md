@@ -1,4 +1,5 @@
-[julia.ppm](julia.ppm)
+[julia.ppm](julia.ppm)  
+
 phcarranza@vm50e3b08ddde69:~/Project-4$ ./runTrials.sh ./iota.gpu
 |Vector<br>Length|Wall Clock<br>Time|User Time|System Time|
 |:--:|--:|--:|--:|
